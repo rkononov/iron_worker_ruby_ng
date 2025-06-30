@@ -6,14 +6,26 @@ GEM
       mime-types
       xml-simple
     builder (3.0.0)
-    hipchat (0.4.1)
+    csv (3.3.5)
+    hipchat (1.6.0)
       httparty
-    httparty (0.8.3)
-      multi_json (~> 1.0)
-      multi_xml
+      mimemagic
+    httparty (0.23.1)
+      csv
+      mini_mime (>= 1.0.0)
+      multi_xml (>= 0.5.2)
     mime-types (1.18)
-    multi_json (1.3.5)
-    multi_xml (0.5.1)
+    mimemagic (0.4.3)
+      nokogiri (~> 1)
+      rake
+    mini_mime (1.1.5)
+    mini_portile2 (2.8.9)
+    multi_xml (0.6.0)
+    nokogiri (1.15.7)
+      mini_portile2 (~> 2.8.2)
+      racc (~> 1.4)
+    racc (1.8.1)
+    rake (13.3.0)
     xml-simple (1.1.1)
 
 PLATFORMS
@@ -21,5 +33,7 @@ PLATFORMS
 
 DEPENDENCIES
   aws-s3
-  bundler
-  hipchat
+  hipchat (>= 0.5.0)
+
+BUNDLED WITH
+   2.1.4
