@@ -1,5 +1,5 @@
 source 'http://rubygems.org'
 
-gem 'hipchat'
+gem 'hipchat', '>= 0.5.0'
 gem 'aws-s3'
 
